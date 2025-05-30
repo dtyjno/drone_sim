@@ -1,0 +1,56 @@
+RTL_SPEED_HIGH   500  # RTL速度cm/s，0时使用WPNAV_SPEED
+WPNAV_SPEED      400  # 指点时的期望水平移动速度 cm/s
+WPNAV_SPEED_DN   80  # 指点时的期望上升移动速度 cm/s
+WPNAV_SPEED_UP   50  # 指点时的期望下降移动速度 cm/s
+
+
+# Iris is X frame
+FRAME_CLASS	     1
+FRAME_TYPE	     1
+
+# Match servo out for motors
+MOT_PWM_MIN      1100
+MOT_PWM_MAX      1900
+
+# Gimbal on mount 1 has 3 DOF
+MNT1_TYPE        1           # Servo
+MNT1_PITCH_MAX   45
+MNT1_PITCH_MIN   -135
+MNT1_ROLL_MAX    30
+MNT1_ROLL_MIN    -30
+MNT1_YAW_MAX     160
+MNT1_YAW_MIN     -160
+
+# Gimbal RC in
+RC6_MAX          1900
+RC6_MIN          1100
+RC6_OPTION       212         # Mount1 Roll
+RC7_MAX          1900
+RC7_MIN          1100
+RC7_OPTION       213         # Mount1 Pitch
+RC8_MAX          1900
+RC8_MIN          1100
+RC8_OPTION       214         # Mount1 Yaw
+
+
+# Gimbal servo out
+SERVO9_FUNCTION  8           # 8Mount1Roll 云台
+SERVO10_FUNCTION 7           # 7Mount1Pitch
+SERVO11_FUNCTION 6           # 6Mount1Yaw 云台旋转角
+
+SERVO9_MIN 1100
+SERVO9_MAX 1900
+SERVO10_MIN 1100
+SERVO10_MAX 1900
+SERVO11_MIN 1100
+SERVO11_MAX 1900
+
+SERVO13_FUNCTION  0         #14  0Disable 投水舵机1
+SERVO14_FUNCTION  0         #13 投水舵机1
+
+# 启动SERVO13和14
+BRD_PWM_COUNT 6
+RELAY1_PIN -1
+RELAY2_PIN -1
+
+MNT1_DEFLT_MODE  2          # 云台启动时的默认模式 MavLink Targeting

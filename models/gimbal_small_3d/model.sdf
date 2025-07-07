@@ -191,15 +191,43 @@
       <sensor name="camera" type="camera">
         <pose>0 0 0 -1.57 -1.57 0</pose>
         <camera>
-          <horizontal_fov>2.0</horizontal_fov>
+          <!--1200度视场角 -->
+          <horizontal_fov>2.094</horizontal_fov>
           <image>
             <width>640</width>
             <height>480</height>
           </image>
           <clip>
             <near>0.05</near>
-            <far>100</far>
+            <far>8.0</far>
           </clip>
+          <distortion>
+            <k1>0.0</k1>
+            <k2>0.0</k2>
+            <k3>0.0</k3>
+            <p1>0.0</p1>
+            <p2>0.0</p2>
+            <center>0.5 0.5</center>
+          </distortion>
+          <lens>
+            <type>equidistant</type> <!--  镜头映射的类型 -->
+            <scale_to_hfov>false</scale_to_hfov> <!--  是否根据水平视场角缩放 -->
+            <!--  以 r=c1*f*fun（theta/c2 + c3） 的形式定义自定义映射函数 -->
+            <custom_function>
+              <c1>1</c1>
+              <c2>1</c2>
+              <c3>0</c3>
+              <f>1</f>
+              <fun>tan</fun>
+            </custom_function>
+            <intrinsics>
+              <fx>360</fx>
+              <fy>360</fy>
+              <cx>320</cx>
+              <cy>240</cy>
+              <s>0</s>
+            </intrinsics>
+          </lens>
         </camera>
         <always_on>1</always_on>
         <update_rate>10</update_rate>

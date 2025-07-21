@@ -194,8 +194,8 @@
           <!--1200度视场角 -->
           <horizontal_fov>2.094</horizontal_fov>
           <image>
-            <width>640</width>
-            <height>480</height>
+            <width>1280</width>
+            <height></height>
           </image>
           <clip>
             <near>0.05</near>

@@ -271,20 +271,17 @@
 
     <include>
       <uri>model://bucket_150_300</uri>
-      <pose degrees="true">1 -31 1 0 0 363</pose>
-      <!-- <pose degrees="true">4 -30 1 0 0 363</pose> -->
+      <pose degrees="true">1 -30 1 0 0 363</pose>
     </include>
 
     <include>
       <uri>model://bucket_200_300</uri>
-      <pose degrees="true">2 -32 1 0 0 363</pose>
-      <!-- <pose degrees="true">4 -35 1 0 0 363</pose> -->
+      <pose degrees="true">2 -30 1 0 0 363</pose>
     </include>
 
     <include>
       <uri>model://bucket_250_300</uri>
-      <pose degrees="true">-1 -33 1 0 0 363</pose>
-      <!-- <pose degrees="true">-4 -35 1 0 0 363</pose> -->
+      <pose degrees="true">-1 -29 1 0 0 363</pose>
     </include>
 
     <include>
